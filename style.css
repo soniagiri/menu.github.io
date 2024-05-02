@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a,
+i {
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-container {
+  height: 100%;
+}
+.container {
+    
+  max-width: 1142px;
+  margin-top: 4rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.section-center {
+    margin-block-end: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.menu-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: white;
+  grid-template-areas: "image info info";
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.137);
+  padding: 2rem 1rem;
+  gap: 1rem;
+  border-radius: 0.2rem;
+}
+.photo {
+  grid-area: image;
+  border: 3px solid darkgoldenrod;
+  border-radius: 0.2rem;
+}
+.item-info {
+  grid-area: info;
+}
+h5 {
+  font-weight: bolder;
+}
+h2 {
+  letter-spacing: 0.2rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
+    gap: .5rem;
+}
+.underline{
+    background: darkgoldenrod;
+    height: 3px;
+    border-radius: 1rem;
+    width: 4rem;
+
+}
+.btns{
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+
+}
+.btns * {
+    background: transparent;
+    outline: none;
+    border-color: darkgoldenrod;
+    padding: .3rem 1rem;
+    cursor: pointer;
+    color: darkgoldenrod;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    letter-spacing: 0.16rem;
+    text-transform: capitalize;
+
+
+} .btns *:hover, .btns *:focus{
+    background: goldenrod;
+    color: white;
+}
+header {
+  display: flex;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.137);
+  padding: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.16rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+.item-text {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+.item-price {
+  color: darkgoldenrod;
+}
